@@ -2,143 +2,92 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ArtiFace – Le réseau mondial des artisans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArtiFace – Vitrine</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Connecter les artisans au monde</h1>
-    <p>Rejoignez notre plateforme pour exposer vos talents, trouver des clients et faire grandir votre activité.</p>
-    <div class="buttons">
-      <a href="#" class="btn btn-primary">S’inscrire</a>
-      <a href="#" class="btn btn-secondary">Se connecter</a>
-    </div>
-  </header>
 
-  <section class="testimonials">
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma R.">
-      <p>“J’ai pu développer mon activité artisanale grâce à ArtiFace. Très simple à utiliser !”</p>
-      <h3>Emma R.</h3>
-      <div class="stars">★★★★★</div>
-    </div>
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James S.">
-      <p>“Grâce à ArtiFace, j’ai trouvé des clients partout dans mon pays !”</p>
-      <h3>James S.</h3>
-      <div class="stars">★★★★★</div>
-    </div>
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/women/41.jpg" alt="Olivia M.">
-      <p>“Une plateforme sérieuse pour les vrais artisans. Bravo !”</p>
-      <h3>Olivia M.</h3>
-      <div class="stars">★★★★★</div>
-    </div>
-  </section>
+<header>
+  <h1>Connecter les artisans au monde</h1>
+  <p>Rejoignez notre plateforme pour exposer vos talents, trouver des clients et faire grandir votre activité.</p>
+  <div class="buttons">
+    <a href="#" class="btn btn-primary">S’inscrire</a>
+    <a href="#" class="btn btn-secondary">Se connecter</a>
+  </div>
+</header>
 
-  <section class="metiers">
-    <h2>Métiers disponibles</h2>
-    <input type="text" placeholder="Rechercher un métier..." id="searchInput" onkeyup="searchMetier()" />
-    <ul id="metierList">
-      <li>Menuisier</li>
-      <li>Peintre en bâtiment</li>
-      <li>Coiffeur</li>
-      <li>Soudeur</li>
-      <li>Mécanicien</li>
-      <li>Tisserand</li>
-      <li>Électricien</li>
-      <li>Plombier</li>
-      <li>Sculpteur</li>
-      <li>Couturière</li>
-    </ul>
-  </section>
+<section class="testimonials">
+  <div class="card">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emma">
+    <p>“J’ai pu développer mon activité artisanale grâce à ArtiFace. Très simple à utiliser !”</p>
+    <h3>Emma R.</h3>
+    <div class="stars">★★★★★</div>
+  </div>
+  <div class="card">
+    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="James">
+    <p>“Grâce à ArtiFace, mes créations sont visibles dans tout le pays. Merci !”</p>
+    <h3>James S.</h3>
+    <div class="stars">★★★★★</div>
+  </div>
+</section>
 
-  <section class="artisans">
-    <h2>Artisans du monde</h2>
-    <div class="grid">
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Aïcha M.">
-        <div class="badge">✅ Validé</div>
-        <h3>Aïcha M.</h3>
-        <p>🇲🇦 Couturière – Maroc</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="Carlos R.">
-        <div class="badge">✅ Validé</div>
-        <h3>Carlos R.</h3>
-        <p>🇲🇽 Maçon – Mexique</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/women/34.jpg" alt="Emily L.">
-        <div class="badge">✅ Validé</div>
-        <h3>Emily L.</h3>
-        <p>🇫🇷 Coiffeuse – France</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Ismael T.">
-        <div class="badge">✅ Validé</div>
-        <h3>Ismael T.</h3>
-        <p>🇧🇯 Mécanicien – Bénin</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Linda N.">
-        <div class="badge">✅ Validé</div>
-        <h3>Linda N.</h3>
-        <p>🇰🇪 Menuisière – Kenya</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Tom W.">
-        <div class="badge">✅ Validé</div>
-        <h3>Tom W.</h3>
-        <p>🇺🇸 Plâtrier – USA</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Mei X.">
-        <div class="badge">✅ Validé</div>
-        <h3>Mei X.</h3>
-        <p>🇨🇳 Tisserande – Chine</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Pedro S.">
-        <div class="badge">✅ Validé</div>
-        <h3>Pedro S.</h3>
-        <p>🇧🇷 Électricien – Brésil</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Sofia V.">
-        <div class="badge">✅ Validé</div>
-        <h3>Sofia V.</h3>
-        <p>🇮🇹 Peintre – Italie</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
-      <div class="artisan-card">
-        <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Aliou D.">
-        <div class="badge">✅ Validé</div>
-        <h3>Aliou D.</h3>
-        <p>🇸🇳 Sculpteur – Sénégal</p>
-        <a href="#" class="btn btn-secondary">Voir profil</a>
-      </div>
+<section class="jobs">
+  <h2>Métiers disponibles</h2>
+  <input type="text" placeholder="Rechercher un métier…" id="searchInput" onkeyup="filterJobs()" />
+  <ul id="jobList">
+    <li>Menuisier</li>
+    <li>Peintre en bâtiment</li>
+    <li>Coiffeur</li>
+    <li>Soudeur</li>
+    <li>Mécanicien</li>
+    <li>Tisserand</li>
+    <li>Électricien</li>
+    <li>Plombier</li>
+    <li>Sculpteur</li>
+    <li>Couturière</li>
+  </ul>
+</section>
+
+<section class="artisans">
+  <h2>Artisans internationaux</h2>
+  <div class="artisan-list">
+    <div class="artisan-card">
+      <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="Artisan">
+      <h3>Mamadou D.</h3>
+      <p>Pays : Sénégal</p>
+      <span class="badge">Validé</span><br>
+      <a href="profil.html" class="profil-link">Voir profil</a>
     </div>
-  </section>
+    <div class="artisan-card">
+      <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Artisan">
+      <h3>Amina K.</h3>
+      <p>Pays : Maroc</p>
+      <span class="badge">Validé</span><br>
+      <a href="profil.html" class="profil-link">Voir profil</a>
+    </div>
+    <div class="artisan-card">
+      <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Artisan">
+      <h3>John B.</h3>
+      <p>Pays : Canada</p>
+      <span class="badge">Validé</span><br>
+      <a href="profil.html" class="profil-link">Voir profil</a>
+    </div>
+  </div>
+</section>
 
-  <script>
-    function searchMetier() {
-      const input = document.getElementById("searchInput").value.toLowerCase();
-      const list = document.getElementById("metierList").getElementsByTagName("li");
-      for (let i = 0; i < list.length; i++) {
-        const text = list[i].textContent.toLowerCase();
-        list[i].style.display = text.includes(input) ? "block" : "none";
-      }
-    }
-  </script>
+<script>
+function filterJobs() {
+  const input = document.getElementById('searchInput');
+  const filter = input.value.toUpperCase();
+  const ul = document.getElementById('jobList');
+  const li = ul.getElementsByTagName('li');
+  for (let i = 0; i < li.length; i++) {
+    let txt = li[i].textContent || li[i].innerText;
+    li[i].style.display = txt.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+  }
+}
+</script>
+
 </body>
 </html>
