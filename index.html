@@ -1,42 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArtiFace – Le réseau mondial des artisans</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArtiFace – Réseau des Artisans</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+
+  <header class="hero">
     <h1>Connecter les artisans au monde</h1>
     <p>Rejoignez notre plateforme pour exposer vos talents, trouver des clients et faire grandir votre activité.</p>
-    <div class="buttons">
-      <a href="#" class="btn btn-primary">S’inscrire</a>
-      <a href="#" class="btn btn-secondary">Se connecter</a>
+    <div class="hero-buttons">
+      <button class="btn btn-primary">S’inscrire</button>
+      <button class="btn btn-secondary">Se connecter</button>
     </div>
   </header>
 
   <section class="testimonials">
-    <div class="card">
-      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma R.">
+    <div class="testimonial-card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emma R.">
       <p>“J’ai pu développer mon activité artisanale grâce à ArtiFace. Très simple à utiliser !”</p>
       <h3>Emma R.</h3>
       <div class="stars">⭐⭐⭐⭐⭐</div>
     </div>
 
-    <div class="card">
+    <div class="testimonial-card">
       <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James S.">
-      <p>“Une vitrine utile pour les artisans. Je reçois maintenant des clients chaque semaine.”</p>
+      <p>“Une plateforme vraiment utile pour les artisans. Merci à toute l’équipe ArtiFace !”</p>
       <h3>James S.</h3>
       <div class="stars">⭐⭐⭐⭐⭐</div>
     </div>
 
-    <div class="card">
+    <div class="testimonial-card">
       <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Olivia M.">
-      <p>“Je recommande ArtiFace à tous les artisans qui veulent se faire connaître.”</p>
+      <p>“J’ai trouvé mes premiers clients grâce à ce réseau. Très utile et sérieux.”</p>
       <h3>Olivia M.</h3>
       <div class="stars">⭐⭐⭐⭐⭐</div>
     </div>
   </section>
+
+  <section class="metiers">
+    <h2>Métiers disponibles</h2>
+    <input type="text" id="searchInput" placeholder="Rechercher un métier...">
+    <ul id="metierList">
+      <li>Menuisier</li>
+      <li>Peintre en bâtiment</li>
+      <li>Coiffeur</li>
+      <li>Soudeur</li>
+      <li>Mécanicien</li>
+      <li>Tisserand</li>
+      <li>Électricien</li>
+      <li>Plombier</li>
+      <li>Sculpteur</li>
+      <li>Couturière</li>
+    </ul>
+  </section>
+
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const metierList = document.getElementById('metierList');
+    const metiers = Array.from(metierList.getElementsByTagName('li'));
+
+    searchInput.addEventListener('input', () => {
+      const value = searchInput.value.toLowerCase();
+      metiers.forEach(li => {
+        li.style.display = li.textContent.toLowerCase().includes(value) ? '' : 'none';
+      });
+    });
+  </script>
+
 </body>
 </html>
