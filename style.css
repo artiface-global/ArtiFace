@@ -34,7 +34,6 @@ header p {
   border-radius: 6px;
   font-weight: bold;
   margin: 5px;
-  text-align: center;
 }
 
 .btn-primary {
@@ -84,44 +83,40 @@ header p {
   margin-top: 5px;
 }
 
-.metiers {
+.jobs {
+  padding: 30px 20px;
   text-align: center;
-  padding: 40px 20px;
-  background: #ffffff;
 }
 
-.metiers input {
+.jobs input {
   padding: 10px;
+  font-size: 16px;
   width: 80%;
   max-width: 400px;
-  margin: 20px 0;
-  font-size: 16px;
-  border: 2px solid #333;
+  margin-bottom: 20px;
   border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
-.metiers ul {
-  list-style: none;
+.jobs ul {
+  list-style-type: none;
   padding: 0;
+  max-width: 400px;
+  margin: auto;
 }
 
-.metiers li {
-  font-size: 18px;
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
+.jobs li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
 .artisans {
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   text-align: center;
 }
 
-.artisans h2 {
-  margin-bottom: 30px;
-}
-
-.grid {
+.artisan-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -129,29 +124,48 @@ header p {
 }
 
 .artisan-card {
-  background: white;
+  background: #fff;
   border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
   padding: 20px;
   width: 220px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+  text-align: center;
 }
 
 .artisan-card img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
 }
 
-.artisan-card .badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.badge {
   background-color: #28a745;
   color: white;
-  padding: 3px 8px;
   font-size: 12px;
-  border-radius: 6px;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.profil-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.profil-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.profil-container img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
