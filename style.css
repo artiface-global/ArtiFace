@@ -82,3 +82,35 @@ header p {
   font-size: 18px;
   margin-top: 5px;
 }
+
+/* ➕ SECTION MÉTIERS */
+.metiers {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.metiers h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.metiers input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.metiers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.metiers li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
